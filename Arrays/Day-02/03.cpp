@@ -22,5 +22,24 @@ int main(){
         revarr[j] = arr[(size -1)-j];
         cout<<revarr[j]<<endl;
     }
-    return 0;
+   
+
+// Another approach if we want to do it using one array only.
+
+    int start=0, end= (size -1);
+
+    while(start < end)
+    {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+    cout<<"The reversed array is: ";
+    for(int i=0; i<size; i++)
+    {
+        cout<<arr[i]<<endl;;
+    }
+
+
+ return 0;
 }
